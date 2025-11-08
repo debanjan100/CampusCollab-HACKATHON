@@ -1,0 +1,144 @@
+# CampusCollab - Full Stack MERN Project
+
+## 📁 Project Structure
+
+```
+campus-collab/
+├── client/                 # Frontend React App
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Hero.jsx
+│   │   │   ├── Features.jsx
+│   │   │   ├── SkillBadge.jsx
+│   │   │   ├── UserCard.jsx
+│   │   │   └── ProjectCard.jsx
+│   │   ├── pages/
+│   │   │   ├── Home.jsx
+│   │   │   ├── Login.jsx
+│   │   │   ├── Register.jsx
+│   │   │   ├── Dashboard.jsx
+│   │   │   ├── Profile.jsx
+│   │   │   ├── Search.jsx
+│   │   │   └── Projects.jsx
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   ├── utils/
+│   │   │   └── api.js
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── tailwind.config.js
+│   └── postcss.config.js
+│
+├── server/                 # Backend Node.js/Express
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Project.js
+│   ├── routes/
+│   │   ├── auth.js
+│   │   ├── users.js
+│   │   └── projects.js
+│   ├── middleware/
+│   │   └── auth.js
+│   ├── config/
+│   │   └── db.js
+│   ├── server.js
+│   ├── package.json
+│   └── .env.example
+│
+├── README.md
+└── .gitignore
+```
+
+## 🚀 Setup Instructions
+
+### Prerequisites
+- Node.js (v16+)
+- MongoDB Atlas account
+- Git
+
+### Backend Setup
+
+1. Navigate to server directory:
+```bash
+cd server
+npm install
+```
+
+2. Create `.env` file:
+```env
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+PORT=5000
+```
+
+3. Start server:
+```bash
+npm run dev
+```
+
+### Frontend Setup
+
+1. Navigate to client directory:
+```bash
+cd client
+npm install
+```
+
+2. Create `.env` file:
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+3. Start development server:
+```bash
+npm run dev
+```
+
+## 📦 Dependencies
+
+### Backend
+- express
+- mongoose
+- bcryptjs
+- jsonwebtoken
+- cors
+- dotenv
+- nodemon (dev)
+
+### Frontend
+- react
+- react-router-dom
+- axios
+- tailwindcss
+- lucide-react
+
+## 🌐 Deployment
+
+### Backend (Render)
+1. Push code to GitHub
+2. Create new Web Service on Render
+3. Connect repository
+4. Add environment variables
+5. Deploy
+
+### Frontend (Vercel)
+1. Push code to GitHub
+2. Import project to Vercel
+3. Configure build settings
+4. Add environment variables
+5. Deploy
+
+## 👥 Team - Quad-Coders
+- **Debanjan Ghorui** (Team Lead) - 10300224073
+- **Ananya Ray** - 10300224032
+- **Asmit Roy** - 10300224060
+- **Ayan Hait** - 10300224061
+
+## 📝 License
+MIT License
